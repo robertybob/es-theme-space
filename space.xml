@@ -1,0 +1,81 @@
+<!--
+theme name:		space
+version:		1.01
+author:			robertybob
+website:		http://blog.petrockblock.com/community/members/robertybob/profile/
+license:		creative commons CC-BY-NC-SA
+thanks:			thanks to Insecurespike for creating the awesome RetroPlay Themes!
+changelog:		Added Megadrive
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+	<view name="system">
+	
+		<image name="background" extra="true">
+		    <path>./art/bground.jpg</path>
+			<size>0 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+		</image>
+	</view>
+
+    <view name="basic, detailed">
+
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>00000000</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/invisible.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0.18 0.05</size>
+		</text>
+		
+		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount">
+			<color>00000000</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/invisible.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0.18 0.05</size>
+		</text>
+
+		<text name="md_description">
+			<color>00000000</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/invisible.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+		</text>
+		
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>00000000</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/invisible.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<size>0 0.05</size>
+		</datetime>
+		
+		<image name="background">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0 1</size>
+			<path>./art/bground_sub.jpg</path>
+		</image> 
+
+	<textlist name="gamelist">
+		    <selectorColor>ffffff00</selectorColor>
+			<selectedColor>C0C0C0</selectedColor>
+			<primaryColor>FFA500</primaryColor>
+			<secondaryColor>800000</secondaryColor>
+			<fontPath>./art/Xolonium-Bold.otf</fontPath>
+			<fontSize>0.035</fontSize>
+		</textlist>
+		
+	</view>
+
+	<view name="basic">
+	</view>
+
+	<view name="detailed">
+	</view>
+	
+</theme>
