@@ -18,6 +18,7 @@ Atari 7800
 Atari Falcon
 Atari Jaguar
 Commodore 64
+Dreamcast
 Final Burn Alpha
 GameGear
 Game Boy / Color / Advance
@@ -26,9 +27,11 @@ Kodi
 MAME
 Mastersystem
 N64
+NeoGeo
 NES
 PC
 Ports
+PSP
 PSX
 RetroPie
 Scummvm
@@ -37,6 +40,7 @@ SegaCD
 SG-1000
 SNES
 TG16
+Vectrex
 ZX Spectrum
 
 License
