@@ -18,7 +18,7 @@
 	<view name="basic, detailed">
 	
 		<text name="system_name_1" extra="true">
-			<text>[lr-genesis-plus-gx]</text>
+			<text>[lr-picodrive]</text>
 			<size>0.45 0.06</size>
 			<pos>0.527 0</pos>
 			<color>d7d7d7</color>
@@ -26,7 +26,7 @@
 			<fontSize>0.030</fontSize>
 			<alignment>right</alignment>
 		</text>
-
+		
 		<image name="logo">
 			<path>./art/megadrive2_sub.svg.png</path>
 			<pos>0.0605 0.152</pos>
@@ -34,11 +34,7 @@
 			<origin>0 0.5</origin>
 		</image>
 		
-		<helpsystem name="help">
-			<textColor>000000</textColor>
-			<iconColor>000000</iconColor>
-		</helpsystem>
-
+		
 	</view>
 
 	<view name="basic">
@@ -54,15 +50,15 @@
 
 	<view name="detailed">
 	
-<!-- <measuring rectangle 
+<!-- <measuring rectangle
 		<image name="measure" extra="true">
-			<pos>0.025 0.6</pos>
+			<pos>0.025 0.23</pos>
 			<origin>0 0</origin>
-			<size>0.125 0.301</size>
+			<size>0.142 0.301</size>
 			<path>./../art/white.png</path>
 			<color>ff00ff</color>
 		</image> 
--->
+ -->
 
 		<image name="md_image">
 			<pos>0.25 0.56</pos>

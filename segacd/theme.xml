@@ -5,7 +5,7 @@
 	<view name="system">
 
 		<image name="logo">
-			<path>./art/segacdscd.svg</path>
+			<path>./art/scd.svg</path>
         </image>
 		
 		<helpsystem name="help">
