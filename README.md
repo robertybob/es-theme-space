@@ -23,6 +23,7 @@ Final Burn Alpha
 GameGear
 Game Boy / Color / Advance
 Genesis / Megadrive
+Intellivision
 Kodi
 MAME
 Mastersystem
@@ -41,6 +42,7 @@ SG-1000
 SNES
 TG16
 Vectrex
+Zmachine
 ZX Spectrum
 
 License
