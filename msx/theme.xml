@@ -5,7 +5,7 @@
 	<view name="system">
 
 		<image name="logo">
-			<path>./art/gen.svg</path>
+			<path>./art/clean_msx.svg.png</path>
         </image>
 		
 		<helpsystem name="help">
@@ -18,7 +18,7 @@
 	<view name="basic, detailed, video">
 	
 		<text name="system_name_1" extra="true">
-			<text>[lr-genesis-plus-gx]</text>
+			<text>[lr-gambatte]</text>
 			<size>0.45 0.06</size>
 			<pos>0.527 0</pos>
 			<color>d7d7d7</color>
@@ -28,7 +28,7 @@
 		</text>
 
 		<image name="logo">
-			<path>./art/genesis2_sub.svg.png</path>
+			<path>./art/clean_msx.svg.png</path>
 			<pos>0.0605 0.152</pos>
 			<size>0.3791 0.15</size>
 			<origin>0 0.5</origin>
