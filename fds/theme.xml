@@ -5,7 +5,7 @@
 	<view name="system">
 
 		<image name="logo">
-			<path>./art/apple2.svg</path>
+			<path>./art/fds.svg</path>
         </image>
 		
 		<helpsystem name="help">
@@ -17,8 +17,8 @@
 
 	<view name="basic, detailed, video">
 	
-		text name="system_name_1" extra="true">
-			<text>[linapple]</text>
+		<text name="system_name_1" extra="true">
+			<text>[cpc4rpi]</text>
 			<size>0.45 0.06</size>
 			<pos>0.527 0</pos>
 			<color>d7d7d7</color>
@@ -28,7 +28,7 @@
 		</text>
 
 		<image name="logo">
-			<path>./art/apple2_sub.svg.png</path>
+			<path>./art/./art/clean_fds.svg.png</path>
 			<pos>0.0605 0.152</pos>
 			<size>0.3791 0.15</size>
 			<origin>0 0.5</origin>
