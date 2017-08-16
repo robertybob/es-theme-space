@@ -1,27 +1,64 @@
 <!--
 theme name:		space
-version:		1.01
+version:		2
 author:			robertybob
 website:		http://blog.petrockblock.com/community/members/robertybob/profile/
 license:		creative commons CC-BY-NC-SA
-thanks:			thanks to Insecurespike for creating the awesome RetroPlay Themes!
-changelog:		Added Megadrive
+thanks:			thanks to: Insecurespike for creating the theme I have adapted, Nismo for testing and how to add system sounds, HerbFargus for implementation of backwards compatibility.
+
 -->
 
 <theme>
-    <formatVersion>3</formatVersion>
+    <formatVersion>4</formatVersion>
 
 	<view name="system">
-	
+	 	
+		<sound name="systemSound">
+         	<path>./art/systemsound2.wav</path>
+     </sound>
+	 
 		<image name="background" extra="true">
 		    <path>./art/bground.jpg</path>
 			<size>0 1</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 		</image>
-	</view>
+		
+		</view>
 
-    <view name="basic, detailed">
+	<feature supported="carousel">
+  
+  <view name="system">
+
+    <carousel name="systemcarousel">
+      <type>horizontal</type>
+      <pos>0 0.42</pos>
+      <size>1 0.2325</size>
+      <color>FFFFFFD8</color>
+      <logoScale>2</logoScale>
+      <logoSize>0.125 0.155</logoSize>
+      <maxLogoCount>4</maxLogoCount>
+    </carousel>
+
+    <text name="systemInfo">
+      <backgroundColor>FFFFFFD8</backgroundColor>
+      <pos>0.0 0.950</pos>
+	  <color>000000</color>
+      <fontPath>./art/Xolonium-Bold.otf</fontPath>
+      <fontSize>0.018</fontSize>
+    </text>
+        <helpsystem name="help">
+            <pos>0.0 0.0</pos>
+            <textColor>FFA500</textColor>
+            <iconColor>FFFFFFD8</iconColor>
+            <fontPath></fontPath>
+            <fontSize>0.012</fontSize>
+        </helpsystem>
+  </view>
+
+  </feature>	
+
+    <view name="basic, detailed, video">
 
 		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 			<color>00000000</color>
@@ -31,14 +68,14 @@ changelog:		Added Megadrive
 			<size>0.18 0.05</size>
 		</text>
 		
-		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount">
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
 			<color>00000000</color>
 			<forceUppercase>1</forceUppercase>
 			<fontPath>./art/invisible.ttf</fontPath>
 			<fontSize>0.02</fontSize>
 			<size>0.18 0.05</size>
 		</text>
-
+		
 		<text name="md_description">
 			<color>00000000</color>
 			<forceUppercase>1</forceUppercase>
@@ -67,7 +104,7 @@ changelog:		Added Megadrive
 			<primaryColor>FFA500</primaryColor>
 			<secondaryColor>800000</secondaryColor>
 			<fontPath>./art/Xolonium-Bold.otf</fontPath>
-			<fontSize>0.035</fontSize>
+			<fontSize>0.030</fontSize>
 		</textlist>
 		
 	</view>
@@ -76,6 +113,106 @@ changelog:		Added Megadrive
 	</view>
 
 	<view name="detailed">
+ 
+		<image name="background">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0 1</size>
+			<path>./art/bground_sub.jpg</path>
+		</image>
+
+	<!-- <measuring rectangle
+		<image name="measure" extra="true">
+			<pos>0.025 0.23</pos>
+			<origin>0 0</origin>
+			<size>0.142 0.301</size>
+			<path>./../art/white.png</path>
+			<color>ff00ff</color>
+		</image> 
+ -->
+ 
+		<text name="md_description">
+			<size>0.450 0.190</size>
+			<pos>0.032 0.710</pos>
+			<color>FFFFFF</color>
+			<fontPath>./art/Xolonium-Bold.otf</fontPath>
+			<fontSize>0.02</fontSize>
+		</text>
+		
+		<textlist name="gamelist">
+			<pos>0.500 0.08</pos>
+			<size>0.480 0.84</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>	
+		
+		<rating name="md_rating">
+			<size>0.150 0.040</size>
+			<pos>0.194 0.6500</pos>
+			<filledPath>./art/star.png</filledPath>
+
+		</rating>
 	</view>
+
+<feature supported="video">
+
+	<view name="video">
+
+		<image name="background">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0 1</size>
+			<path>./art/bground_sub.jpg</path>
+		</image>
+
+	<!-- <measuring rectangle
+		<image name="measure" extra="true">
+			<pos>0.025 0.23</pos>
+			<origin>0 0</origin>
+			<size>0.142 0.301</size>
+			<path>./../art/white.png</path>
+			<color>ff00ff</color>
+		</image> 
+ -->
+ 
+		<text name="md_description">
+			<size>0.450 0.190</size>
+			<pos>0.032 0.710</pos>
+			<color>FFFFFF</color>
+			<fontPath>./art/Xolonium-Bold.otf</fontPath>
+			<fontSize>0.02</fontSize>
+		</text>
+		
+		<video name="md_video">
+			<maxSize>0.300 0.300</maxSize>
+			<pos>0.249 0.405</pos>
+			<origin>0.5 0.5</origin>
+			<delay>0.0</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+
+		<image name="md_marquee">
+			<maxSize>0.000 0.000</maxSize>
+			<pos>0.000 0.000</pos>
+			<origin>0.0 0.0</origin>
+		</image>
 	
+		<textlist name="gamelist">
+			<pos>0.500 0.08</pos>
+			<size>0.480 0.84</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>	
+		
+	<rating name="md_rating">
+			<size>0.150 0.040</size>
+			<pos>0.194 0.6500</pos>
+			<filledPath>./art/star.png</filledPath>
+
+		</rating>
+	</view>
+
+</feature>
+
 </theme>
