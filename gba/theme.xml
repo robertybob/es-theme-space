@@ -30,7 +30,7 @@
 		<image name="logo">
 			<path>./art/gba_sub.svg.png</path>
 			<pos>0.0605 0.152</pos>
-			<size>0.3791 0.15</size>
+			<maxSize>0.3791 0.15</maxSize>
 			<origin>0 0.5</origin>
 		</image>
 		
